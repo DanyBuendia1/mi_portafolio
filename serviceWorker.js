@@ -2,6 +2,7 @@ const nombreCache ="Mi_portafolio"
 const archivosCache =
 [
    "./",
+   "./iconos/logosinfondo.png",
    "./bootstrap/css/bootstrap.min.css",
    "./bootstrap/js/bootstrap.min.js",   
    "./index.html",
