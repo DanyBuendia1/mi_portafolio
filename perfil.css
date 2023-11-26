@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+}
+:root{
+    --barra1-color: rgb(7, 100, 116);
+    --barra1-tamaño: 0%;
+    --barra2-color: yellow;
+    --barra2-tamaño:0%;
+    --barra3-color:rgb(53, 53, 239);
+    --barra3-tamaño:0%;
+    --barra4-color: green;
+    --barra4-tamaño: 0%;
+    
+}
+body{
+    font-family:'Times New Roman', Times, serif ;
+    cursor: url("./img/logosinfondo.png"), auto;
+}
+.nombre{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(233,255,255,1) 27%, rgb(232, 253, 255) 60%, rgba(45,60,253,1) 100%);
+    background-attachment: fixed;
+    padding: 15px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    margin: 15px;
+}
+.CV{
+    color: white;
+}
+.contacto{
+    background-color: rgb(5, 5, 84);
+    color: white;
+    overflow: hidden;
+    /*overflow: hidden;  Oculta el texto que se desborda del contenedor 
+    word-wrap: break-word;
+    */
+}
+
+.info{
+    color: rgb(129, 129, 213);
+}
+a{
+    text-decoration: none;
+    color: rgb(129, 129, 213);
+}
+a:hover{
+    color: green;
+    transition: 1s;
+}
+.info:hover{
+    transition: 1s;
+    color: green;
+}
+img{
+    width: 80%;
+    margin-top: 30px;
+    margin:15px;
+    border-radius: 50%;
+    border: solid 1px;
+    border-color: white;
+    background-size: cover; /* Ajusta según el tipo de ajuste que desees */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.informacion{
+    overflow: hidden; /* Oculta el texto que se desborda del contenedor */
+    word-wrap: break-word;
+    margin: 0 auto;
+    width: 80%;
+}
+.animacion{
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+}
+.educacion{
+    color: white;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 13ch;
+    animation: typing 4s steps(80), blink 1s infinite step-end alternate;
+    overflow: hidden;
+    
+}
+.educacion:hover{
+    cursor: pointer;
+}
+.experiencia{
+    color: white;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+    animation: typing 4s steps(80), blink 1s infinite step-end alternate;
+    overflow: hidden;
+}
+.experiencia:hover{
+    cursor: pointer;
+}
+@keyframes typing{
+    from{width: 0;}
+}
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+button{
+    overflow: hidden; /* Oculta el texto que se desborda del contenedor */
+    word-wrap: break-word;
+    padding: 10px;
+    border: solid;
+    border-radius: 15px;
+    background-color: transparent;
+    margin: 15px;
+    transition: 3s;
+}
+button:hover{
+        transition: 1s;
+        text-decoration: dashed;       
+}
+li:hover{
+    cursor: pointer;
+    transition: 1s;
+    color: purple;
+    font-size: 18px;
+}
+.footer{
+    margin: 0 auto;
+    width: 80%;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+.css{
+    width: 60px;
+    margin-left: 10px;
+}
+.css:hover{
+    background-color: rgb(7, 100, 116);
+    transition: 1s;
+    .lenguaje{
+        color: #ccc;
+    }
+}
+.js
+{
+    width: 60px;
+    height: 60px;
+}
+.js:hover{
+    background-color: yellow;
+    transition: 2s;
+}
+.sql{
+    width: 60px;
+}
+.sql:hover{
+    background-color: rgb(158, 158, 237);
+    transition: 1s;
+}
+.nosql{
+    width: 60px;
+    height: 60px;
+}
+.nosql:hover{
+    background-color: green;
+    transition: 1s;
+}
+.github{
+    width: 60px;
+    background-color: rgb(127, 14, 127);
+    transition: 3s
+}
+
+.githubdiv{
+    display: flex;
+    align-items: center;
+}
+
+.cssdiv{
+    display: flex;
+    align-items: center;
+}
+.barra1{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra1::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: var(--barra1-color);
+    transform: translateX(-100%);
+    animation: barra1 3s 1s ease-in-out forwards;
+}
+@keyframes barra1{
+    to{
+        transform: translateX(var(--barra1-tamaño));
+    }
+}
+.jsdiv{
+    display: flex;
+    align-items: center;
+}
+.barra2{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra2::before{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: var(--barra2-color);
+    transform: translateX(-100%);
+    animation: barra2 3s 1s ease-in-out forwards;
+}
+@keyframes barra2{
+    to{
+        transform: translateX(var(--barra1-tamaño));
+    }
+}
+.sqldiv{
+    display: flex;
+    align-items: center;
+}
+.barra3{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.barra3::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: var(--barra3-color);
+    transform: translateX(-100%);
+    animation: barra3 3s 1s ease-in-out forwards;
+}
+@keyframes barra3{
+    to{
+        transform: translateX(var(--barra3-tamaño));
+    }
+}
+.nosqldiv{
+    display: flex;
+    align-items: center;
+}
+.barra4{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra4::before{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: var(--barra4-color);
+    transform: translateX(-100%);
+    animation: barra4 3s 1s ease-in-out forwards;
+}
+@keyframes barra4{
+    to{
+        transform: translateX(var(--barra4-tamaño));
+    }
+}
+.barra5{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra5::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: rgb(222,0,255);
+background: linear-gradient(90deg, rgba(222,0,255,1) 14%, rgba(93,9,121,1) 59%);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
+}
+@keyframes barra5{
+    to{
+        transform: translateX(var(--barra4-tamaño));
+    }
+}
+.lenguaje{
+    margin-left: 300px;
+    color: rgb(44, 43, 43);
+}
+
+.iconos{
+    margin: 0 auto;
+    width: 50%;
+}
+/*
+    .css, .js, .sql, .nosql {
+        width: 50px;  Ancho de las imágenes, ajusta según sea necesario 
+        height: 50px; Altura de las imágenes, ajusta según sea necesario 
+        margin: 5px 10px; Espacio entre las imágenes, ajusta según sea necesario 
+    }*/
