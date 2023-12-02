@@ -16,6 +16,12 @@ const archivosCache =
    "./img/js.png",
    "./img/sql.png",
    "./img/nosql.png",
+   "./img/bootstrap.png",
+   "./img/cordova.png",
+   "./img/figma.png",
+   "./img/Nodejs.png",
+   "./img/PWA.png",
+   "./img/unity.png"
 ]
 self.addEventListener("install", e =>{
     // Pre-cache our key assets

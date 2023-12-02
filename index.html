@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="./iconos/logosinfondo.png">
@@ -53,6 +54,37 @@
                 </div>
 
                 <h5 class="text-center">Universidad Tecnologica del Norte de Aguascalientes (UTNA)</h5>
+                <div class="cssdiv" data-aos="fade-right">
+                    <img src="./img/css.png" class="css" alt="">
+                    <div class="barra1"></div>
+                    <img src="./img/js.png" class="js" alt="">
+                    <div class="barra2"></div>
+                </div>
+                <div class="cssdiv" data-aos="fade-left">
+                    <img src="./img/sql.png" class="sql" alt="">
+                    <div class="barra3"></div>
+                    <img src="./img/nosql.png" class="nosql" alt="">
+                    <div class="barra4"></div>
+                </div>
+                <div class="cssdiv" data-aos="fade-right">
+                    <img src="./img/github.png" class="github" alt="">
+                    <div class="barra5"></div>
+                    <img src="./img/figma.png" class="figma" alt="">
+                    <div class="barra6"></div>
+                </div>
+                <div class="cssdiv" data-aos="fade-left">
+                    <img src="./img/bootstrap.png" class="bootstrap" alt="">
+                    <div class="barra7"></div>
+                    <img src="./img/PWA.png" class="PWA" alt="">
+                    <div class="barra8"></div>
+                </div>
+                <div class="cssdiv" data-aos="fade-right">
+                    <img src="./img/cordova.png" class="cordova" alt="">
+                    <div class="barra9"></div>
+                    <img src="./img/unity.png" class="css" alt="">
+                    <div class="barra10"></div>
+                </div>
+                <!--Que los iconos giren y se pongan en su lugar
                 <div class="cssdiv">
                     <img src="./img/css.png" class="css" alt="">
                     <div class="barra1"></div>
@@ -78,39 +110,50 @@
                     <div class="barra5"></div>
                 </div>
                 <p style="margin-left: 30px;">70%</p>
-                <ul>
-                    <li>Nivel de Ingles: Intermedio</li>
-                    <li>Finalicé mis estudios como Tecnico Superior Universitario, en la carrera de Desarrollo de Software Multiplataforma en el año 2022.</li>
-                    <li>Actualmente estoy cursando la Ingrenieria en Desarrollo y Gestion de Software.</li>
-                    <li>Tengo conocimientos basicos de CSS, JavaScript, SQL y NoSQL.</li>
-                    <li>En mis proyectos acostumbro usar un controlador de versiones llamado GitHub.</li>
-                </ul>
-                
+                -->
+                <div data-aos="fade-up">
+                    <ul>
+                        <li>Nivel de Ingles: Intermedio</li>
+                        <li>Finalicé mis estudios como Tecnico Superior Universitario, en la carrera de Desarrollo de Software Multiplataforma en el año 2022.</li>
+                        <li>Actualmente estoy cursando la Ingrenieria en Desarrollo y Gestion de Software.</li>
+                        <li>Tengo conocimientos basicos de CSS, JavaScript, SQL y NoSQL.</li>
+                        <li>En mis proyectos acostumbro usar un controlador de versiones llamado GitHub.</li>
+                    </ul>
+                </div>
                 <!--////////////// Experiencia ///////////// -->
                 <h3 class="text-center">Experiencia Laboral</h3>
-                    <div class="animacion">
+                    <div class="animacion" data-aos="flip-down">
                         <span class="experiencia">1 año y 3 meses</span>
                     </div>
                 <h5>Ticoy Foods - Aguascalientes</h5>
-                <ul>
-                    <li>Gestion y seguimiento en tickets en Soporte Tecnico</li>
-                    <li>Instalacion y Configuracion de programas y sistemas operativos</li>
-                    <li>Instalacion de dispositivos de redes</li>
-                    <li>Monitoreo de Servidores</li>
-                </ul>
+                <div data-aos="fade-up">
+                    <ul>
+                        <li>Gestion y seguimiento en tickets en Soporte Tecnico</li>
+                        <li>Instalacion y Configuracion de programas y sistemas operativos</li>
+                        <li>Instalacion de dispositivos de redes</li>
+                        <li>Monitoreo de Servidores</li>
+                    </ul>
+                </div>
                 <!-- ////////////////-->
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" data-aos="flip-left">
         <h2>Contacto</h2>
         <p>Dirección: <a href="https://www.google.com.mx/maps/place/Pradera+214,+Municipio+Libre,+20199+Aguascalientes,+Ags./@21.8962307,-102.2509316,19z/data=!4m15!1m8!3m7!1s0x8429f1e0bc5833f3:0xe0027abbcce36906!2sPradera+214,+Municipio+Libre,+20199+Aguascalientes,+Ags.!3b1!8m2!3d21.8962295!4d-102.2502879!16s%2Fg%2F11fsjw4hqk!3m5!1s0x8429f1e0bc5833f3:0xe0027abbcce36906!8m2!3d21.8962295!4d-102.2502879!16s%2Fg%2F11fsjw4hqk?entry=ttu">Pradera #214 Municipio Libre</a></p>
         <p>Estado: <a class="info"> Aguascalientes</a></p>
         <p>Telefono: <a class="info">+52 4495524425</a></p>
         <p>Correo: <a class="info" id="correo">danybuendia98@gmail.com</a></p>
     </div>
+
     <script src="app.js"></script>
     <script src="perfil.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:2000
+        });//este metodo arranca las animaciones de la libreria
+    </script>
 </body>
 </html>

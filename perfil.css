@@ -57,7 +57,7 @@ img{
     width: 80%;
     margin-top: 30px;
     margin:15px;
-    border-radius: 50%;
+    border-radius: 15px;
     border: solid 1px;
     border-color: white;
     background-size: cover; /* Ajusta según el tipo de ajuste que desees */
@@ -152,6 +152,7 @@ li:hover{
 {
     width: 60px;
     height: 60px;
+    padding: 20px;
 }
 .js:hover{
     background-color: yellow;
@@ -161,7 +162,7 @@ li:hover{
     width: 60px;
 }
 .sql:hover{
-    background-color: rgb(158, 158, 237);
+    background-color: rgb(69, 246, 237);
     transition: 1s;
 }
 .nosql{
@@ -177,10 +178,45 @@ li:hover{
     background-color: rgb(127, 14, 127);
     transition: 3s
 }
-
 .githubdiv{
     display: flex;
     align-items: center;
+}
+.figma{
+    width: 60px;
+    height: 60px;
+}
+.figma:hover{
+    background-color:rgb(223, 94, 255);
+    transition: 2s;
+}
+.bootstrap{
+    width: 60px;
+    height: 60px;
+}
+.bootstrap:hover{
+    background-color:rgb(228, 133, 252);
+    transition: 2s;
+}
+.PWA{
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.PWA:hover{
+    background-color:rgb(11, 138, 206);
+    transition: 2s;
+}
+.cordova{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.cordova:hover{
+    background-color:rgb(121, 172, 199);
+    transition: 2s;
 }
 
 .cssdiv{
@@ -316,14 +352,116 @@ background: linear-gradient(90deg, rgba(222,0,255,1) 14%, rgba(93,9,121,1) 59%);
         transform: translateX(var(--barra4-tamaño));
     }
 }
-.lenguaje{
-    margin-left: 300px;
-    color: rgb(44, 43, 43);
+
+.barra6
+{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra6::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color:rgb(223, 94, 255);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
+}
+@keyframes barra5{
+    to{
+        transform: translateX(var(--barra4-tamaño));
+    }
+}
+.barra7{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra7::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color:rgb(129, 12, 159);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
+}
+@keyframes barra5{
+    to{
+        transform: translateX(var(--barra4-tamaño));
+    }
+}
+.barra8
+{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra8::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color:rgb(11, 138, 206);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
+}
+@keyframes barra5{
+    to{
+        transform: translateX(var(--barra4-tamaño));
+    }
+}
+.barra9
+{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra9::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color:rgb(1, 90, 137);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
 }
 
-.iconos{
-    margin: 0 auto;
+.barra10
+{
+    margin: 15px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.barra10::before{
+    content: '';
+    position: absolute;
     width: 50%;
+    height: 100%;
+    background-color:rgb(255, 42, 5);
+    transform: translateX(-100%);
+    animation: barra5 3s 1s ease-in-out forwards;
 }
 /*
     .css, .js, .sql, .nosql {
