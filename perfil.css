@@ -177,10 +177,6 @@ li:hover{
     background-color: rgb(127, 14, 127);
     transition: 3s
 }
-.githubdiv{
-    display: flex;
-    align-items: center;
-}
 .figma{
     width: 60px;
     height: 60px;
@@ -245,10 +241,6 @@ li:hover{
         transform: translateX(var(--barra1-tamaño));
     }
 }
-.jsdiv{
-    display: flex;
-    align-items: center;
-}
 .barra2{
     margin: 15px;
     position: relative;
@@ -271,10 +263,6 @@ li:hover{
     to{
         transform: translateX(var(--barra1-tamaño));
     }
-}
-.sqldiv{
-    display: flex;
-    align-items: center;
 }
 .barra3{
     margin: 15px;
@@ -299,10 +287,6 @@ li:hover{
     to{
         transform: translateX(var(--barra3-tamaño));
     }
-}
-.nosqldiv{
-    display: flex;
-    align-items: center;
 }
 .barra4{
     margin: 15px;
