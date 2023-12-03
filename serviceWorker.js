@@ -21,7 +21,10 @@ const archivosCache =
    "./img/figma.png",
    "./img/Nodejs.png",
    "./img/PWA.png",
-   "./img/unity.png"
+   "./img/unity.png",
+   // ### Libreria AOS ###
+   "./aos-master/dist/aos.css",
+   "./aos-master/dist/aos.js"
 ]
 self.addEventListener("install", e =>{
     // Pre-cache our key assets
