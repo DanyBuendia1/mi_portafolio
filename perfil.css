@@ -16,15 +16,24 @@ body{
     font-family:'Times New Roman', Times, serif ;
     cursor: url("./img/logosinfondo.png"), auto;
 }
+.cambiomodo{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+.texto{
+    color: white;
+}
 .nombre{
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(233,255,255,1) 27%, rgb(232, 253, 255) 60%, rgba(45,60,253,1) 100%);
+    background: rgb(68,194,204);
+    background: linear-gradient(0deg, rgba(68,194,204,1) 0%, rgba(45,63,253,1) 50%);
     background-attachment: fixed;
     padding: 15px;
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 15px;
     margin: 15px;
+    margin-top: 85px;
 }
 .CV{
     color: white;
@@ -62,6 +71,7 @@ img{
     border-color: white;
     background-size: cover; /* Ajusta según el tipo de ajuste que desees */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-position: center;
     
 }
 .informacion{
@@ -69,13 +79,14 @@ img{
     word-wrap: break-word;
     margin: 0 auto;
     width: 80%;
+    
 }
 .animacion{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 15px;
     padding: 10px;
-    margin: 0 auto;
     width: 80%;
+    margin: 5%;
 }
 .educacion{
     color: white;
@@ -83,10 +94,10 @@ img{
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 13ch;
+    width: 14ch;
     animation: typing 4s steps(80), blink 1s infinite step-end alternate;
     overflow: hidden;
-    
+    text-align: center;
 }
 .educacion:hover{
     cursor: pointer;
@@ -113,7 +124,7 @@ img{
 button{
     overflow: hidden; /* Oculta el texto que se desborda del contenedor */
     word-wrap: break-word;
-    padding: 10px;
+    padding: 5px;
     border: solid;
     border-radius: 15px;
     background-color: transparent;
@@ -123,6 +134,12 @@ button{
 button:hover{
         transition: 1s;
         text-decoration: dashed;       
+}
+.obscuro{
+    width: 50px;
+}
+li{
+    color: white;
 }
 li:hover{
     cursor: pointer;
@@ -139,37 +156,40 @@ li:hover{
 }
 .css{
     width: 60px;
-    margin-left: 10px;
 }
 .css:hover{
     background-color: rgb(7, 100, 116);
     transition: 1s;
-    .lenguaje{
-        color: #ccc;
-    }
+
 }
 .js
 {
     width: 60px;
     height: 60px;
+    margin-left: 40%;
 }
 .js:hover{
-    background-color: yellow;
+    background-color: rgb(238, 238, 84);
     transition: 2s;
+}
+.lenguaje{
+    margin-left: 40%;
 }
 .sql{
     width: 60px;
+    height: 60px;
 }
 .sql:hover{
-    background-color: rgb(69, 246, 237);
+    background-color: rgb(61, 68, 125);
     transition: 1s;
 }
 .nosql{
     width: 60px;
     height: 60px;
+    padding: 10px;
 }
 .nosql:hover{
-    background-color: green;
+    background-color: rgb(242, 242, 242);
     transition: 1s;
 }
 .github{
@@ -214,6 +234,15 @@ li:hover{
     transition: 2s;
 }
 
+.unity{
+    width: 80px;
+    height: 60px;
+    padding: 10px;
+}
+.unity:hover{
+    background-color: rgb(5, 55, 68);
+    transition: 2s;
+}
 .cssdiv{
     display: flex;
     align-items: center;
@@ -446,9 +475,9 @@ background: linear-gradient(90deg, rgba(222,0,255,1) 14%, rgba(93,9,121,1) 59%);
     transform: translateX(-100%);
     animation: barra5 3s 1s ease-in-out forwards;
 }
-/*
-    .css, .js, .sql, .nosql {
-        width: 50px;  Ancho de las imágenes, ajusta según sea necesario 
-        height: 50px; Altura de las imágenes, ajusta según sea necesario 
-        margin: 5px 10px; Espacio entre las imágenes, ajusta según sea necesario 
-    }*/
+.marching{
+    text-align: center;
+}
+h4{
+    color: white;
+}

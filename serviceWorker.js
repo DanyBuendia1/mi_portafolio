@@ -22,6 +22,15 @@ const archivosCache =
    "./img/Nodejs.png",
    "./img/PWA.png",
    "./img/unity.png",
+
+   "./img/bandaguerra.jpg",
+   "./img/claro.png",
+   "./img/esli.jpg",
+   "./img/marching.jpeg",
+   "./img/obscuro.png",
+   "./img/tickets.jpg",
+   "./img/ticoy.jpg",
+   "./img/utna.jpg",
    // ### Libreria AOS ###
    "./aos-master/dist/aos.css",
    "./aos-master/dist/aos.js"

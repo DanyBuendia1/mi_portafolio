@@ -11,137 +11,209 @@
     <title>Perfil</title>
 </head>
 <body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#nombre">Mi Perfil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nombre">Resumen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aptitudes">Aptitudes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#educacion">Educacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
     <div class="container">
-        
-      <!--############### Contacto ###############
-            <div class="col-4 contacto">
-                <div class="text-center">
-                    <img src="./img/mifoto.png" alt="">
-                    <h5 style="color: rgb(70, 117, 238);">Contacto</h5>
-                </div>
-                <label for="">Direccion: </label><a href="#"> Pradera #214 Municipio Libre</a><br>
-                <label for="">Estado:</label><a href="#"> Aguascalientes</a><br>
-                <label for="">Telefono: </label><a href="#"> +52 4495524425</a><br>
-                <label for="">Correo: </label><a href="#" id="correo"><marquee behavior="" class="correo" direction=""> danybuendia98@gmail.com</marquee></a><br><br>
-                <div class="text-center">
-                    <h5 style="color: rgb(70, 117, 238);">Mis Aptitudes</h5>
-                </div>
-                <li>Dispuesto al trabajo en equipo</li>
-                <li>Mentalidad de crecer</li>
-                <li>Determinado</li>
-
-                <img src="./img/logosinfondo.png" alt="">
-            </div>
-            ############### Contacto ###############-->
             <!-- ############## Informacion #############-->
             <div class="informacion">
-                <div class="nombre">
+                <p id="nombre"></p>
+                <div class="nombre"  data-aos="flip-left" data-aos-easing="ease-out-cubic">
                     <h1>Dany Dorianth Chiquito Buendia</h1>
-                    <div class="text-center">
-                        <button onclick="cambiarTema()">Desarrollador Jr</button>
-                        <a class="CV" href="./img/CV.pdf" download="DanyBuendia.pdf"><button>Descargar CV</button></a>
+                    <h5>Desarrollador jr</h5>
+                    <div class="cssdiv">
+                        <div class="cambiomodo">
+                            <button id="modo" onclick="cambiarTema()">Modo Obscuro<br> <img src="./img/obscuro.png" class="obscuro" alt=""></button><br>
+                            <a class="CV" href="./img/CV.pdf" download="DanyBuendia.pdf"><button>Descargar CV</button></a>
+                        </div>                        
                     </div>
-                </div>
-                    <!-- ############# Mi Perfil ########### -->
-                        <span><h3 class="text-center">Mi Perfil</h3></span>
-                        <p>Soy una persona interesada por aprender y mejorar conocimientos, habilidades y desempeño en el mundo de la programación. <br>
-                        Considero que me esfuerzo mucho en dar resultados y apoyar a mis compañeros en general.</p>
-                    <!-- ############# Mi Perfil ########### -->
-           
-                <!--/////////////// Educacion ///////////-->
-                <div class="animacion">
-                    <span class="educacion" style="font-size: 25px;">Mi Educación</span>
-                </div>
 
-                <h5 class="text-center">Universidad Tecnologica del Norte de Aguascalientes (UTNA)</h5>
-                
+                </div>
+                    <!-- ############# Mi Perfil ########### -->
+                        <span data-aos="flip-up"><h3 class="text-center">Mi Perfil</h3></span>
+                        <p data-aos="flip-left">Soy una persona interesada por aprender y mejorar conocimientos, habilidades y desempeño en el mundo de la programación. <br>
+                        Considero que me esfuerzo mucho en dar resultados y apoyar a mis compañeros en general.</p>
+                    
+                            
+                                
+                            <div class="animacion" data-aos="flip-up">
+                                <h1 id="aptitudes">Mis Aptitudes</h1>
+                                <h4>Habilidades Linguisticas</h4>
+                                <div class="text-center">
+                                <img src="./img/esli.jpg" style="width: 40%;" alt="">
+                                </div>
+                                <p class="text-center texto">
+                                    Estoy estudiando en un instituto de Ingles dedicado a la enseñanza del idioma inglés, a través del MÉTODO NATURAL. <br>
+                                    A lo largo de mi estadia en una empresa tuve la oportunidad de reunir y dar a entender temas de prevencion ante malware para navegar de manera segura y temas de Tecnologica de la Informacion
+                                </p>
+
+                                
+                            </div>
+                            <div class="animacion" data-aos="flip-left">
+                                <h4>Habilidades Creativas</h4>
+                                <div class="marching" data-aos="flip-up">
+                                    <img src="./img/marching.jpeg" alt="">
+                                    <p class="texto">
+                                        He participado en diferentes eventos musicales siendo miembro de un grupo musical llamado Marching Band Buhos en CECyTEA de Rincon de romos.
+                                    </p>                                    
+                                </div>
+                            </div>
+                            <div class="animacion" data-aos="flip-right">
+                                <div class="marching" data-aos="flip-up">
+                                <img src="./img/bandaguerra.jpg" alt="">
+                                <p class="texto">
+                                    He estado en eventos de festivales apoyando la comunidad de Cañada Honda en el Plantel CECyTEA
+                                </p>    
+                            </div>
+                            </div>
+                    <!-- ############# Mi Perfil ########### -->
+                <!--/////////////// Educacion ///////////-->
+           
                 <div class="row">
-            <div data-aos="fade-left">
-                <div class="cssdiv">
-                    <img src="./img/css.png" class="css" alt="">
-                    <img src="./img/js.png" class="js" alt="" style="margin-left: 40%;">
-                </div>
-                <div class="cssdiv">
-                    <div class="barra1"></div>
-                    <div class="barra2"></div>
-                </div>
-            </div>
-            <div data-aos="fade-right">
-                <div class="cssdiv">
-                    <img src="./img/sql.png" class="sql" alt="">
-                    <img src="./img/nosql.png" class="nosql" alt="" style="margin-left: 40%;">
-                </div>
-                <div class="cssdiv">
-                    <div class="barra3"></div>
-                    <div class="barra4"></div>
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <div class="divcss">
-                    <img src="./img/github.png" class="github" alt="">
-                    <img src="./img/figma.png" class="figma" alt="" style="margin-left: 40%;">
-                </div>
-                <div class="cssdiv">
-                    <div class="barra5"></div>
-                    <div class="barra6"></div>
-                </div>
-            </div>
-            <div data-aos="fade-right">
-                <div class="divcss">
-                    <img src="./img/bootstrap.png" class="bootstrap" alt="">
-                    <img src="./img/PWA.png" class="PWA" alt="" style="margin-left: 40%;">
-                </div>
-                <div class="cssdiv">
-                    <div class="barra7"></div>
-                    <div class="barra8"></div>
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <div class="divcss">
-                    <img src="./img/cordova.png" class="cordova" alt="">
-                    <img src="./img/unity.png" class="css" alt="" style="margin-left: 40%;">
-                </div>
-                <div class="cssdiv">
-                    <div class="barra9"></div>
-                    <div class="barra10"></div>
-                </div>
-            </div>
-                <div data-aos="fade-up">
+                <div class="animacion" data-aos="flip-left" data-aos-easing="ease-out-cubic">
+                    <span class="educacion" style="font-size: 25px;" id="educacion">Mi Educación</span>
+                    <div class="marching">
+                        <h5 class="text-center" style="color: white;">Universidad Tecnologica del Norte de Aguascalientes (UTNA)</h5>
+                        <img src="./img/utna.jpg" alt="">
+                    </div>
                     <ul>
                         <li>Nivel de Ingles: Intermedio</li>
                         <li>Finalicé mis estudios como Tecnico Superior Universitario, en la carrera de Desarrollo de Software Multiplataforma en el año 2022.</li>
                         <li>Actualmente estoy cursando la Ingrenieria en Desarrollo y Gestion de Software.</li>
                         <li>Tengo conocimientos basicos de CSS, JavaScript, SQL y NoSQL.</li>
                         <li>En mis proyectos acostumbro usar un controlador de versiones llamado GitHub.</li>
+                        <li>Tambien uso algunas librerias que ayudan a mejorar el diseño en el desarrollo web como bootstrap, SweetAlert y AOS</li>
                     </ul>
-                </div>
-                <!--////////////// Experiencia ///////////// -->
-                <h3 class="text-center">Experiencia Laboral</h3>
-                    <div class="animacion" data-aos="flip-down">
-                        <span class="experiencia">1 año y 3 meses</span>
+                    <div data-aos="fade-left">
+                        <div class="cssdiv">
+                            <img src="./img/css.png" class="css">
+                            <img src="./img/js.png" class="js">
+                        </div>
+                        <div class="cssdiv">
+                            <p style="margin-left: 5%; color: white;">CSS: 80%</p>
+                            <p class="lenguaje" style="color: white;">JavaScript: 60%</p>
+                        </div>
+                        <div class="cssdiv">
+                            <div class="barra1"></div>
+                            <div class="barra2"></div>
+                        </div>
                     </div>
-                <h5>Ticoy Foods - Aguascalientes</h5>
-                <div data-aos="fade-up">
-                    <ul>
-                        <li>Gestion y seguimiento en tickets en Soporte Tecnico</li>
-                        <li>Instalacion y Configuracion de programas y sistemas operativos</li>
-                        <li>Instalacion de dispositivos de redes</li>
-                        <li>Monitoreo de Servidores</li>
-                    </ul>
+                    <div data-aos="fade-right">
+                        <div class="cssdiv">
+                            <img src="./img/sql.png" class="sql" alt="">
+                            <img src="./img/nosql.png" class="nosql" alt="" style="margin-left: 40%;">
+                        </div>
+                        <div class="cssdiv">
+                            <p style="margin-left: 5%; color: white;">SQL: 50%</p>
+                            <p class="mongo" style="margin-left: 40%; color: white;">MongoDB: 60%</p>
+                        </div>
+                        <div class="cssdiv">
+                            <div class="barra3"></div>
+                            <div class="barra4"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <div class="cssdiv">
+                            <img src="./img/github.png" class="github" alt="">
+                            <img src="./img/figma.png" class="figma" alt="" style="margin-left: 40%;">
+                        </div>
+                        <div class="cssdiv">
+                            <p style="margin-left: 5%; color: white;">GITHUB: 70%</p>
+                            <p class="figma1" style="margin-left: 35%; color: white;">Figma: 90%</p>
+                        </div>
+                        <div class="cssdiv">
+                            <div class="barra5"></div>
+                            <div class="barra6"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right">
+                        <div class="cssdiv">
+                            <img src="./img/bootstrap.png" class="bootstrap" alt="">
+                            <img src="./img/PWA.png" class="PWA" alt="" style="margin-left: 40%;">
+                        </div>
+                        <div class="cssdiv">
+                            <p style="margin-left: 5%; color: white;">Bootstrap: 80%</p>
+                            <p class="PWA1" style="margin-left: 35%; color: white;">PWA: 80%</p>
+                        </div>
+                        <div class="cssdiv">
+                            <div class="barra7"></div>
+                            <div class="barra8"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <div class="cssdiv">
+                            <img src="./img/cordova.png" class="cordova" alt="">
+                            <img src="./img/unity.png" class="unity" alt="" style="margin-left: 40%;">
+                        </div>
+                        <div class="cssdiv">
+                            <p style="margin-left: 5%; color: white;">Cordova: 30%</p>
+                            <p class="unity1" style="margin-left: 35%; color: white;" id="experiencia">UNITY: 50%</p>
+                        </div>
+                        <div class="cssdiv">
+                            <div class="barra9"></div>
+                            <div class="barra10"></div>
+                        </div>
+                    </div>
                 </div>
+
+                <!--////////////// Experiencia ///////////// -->
+                <h3 class="text-center" id="experiencia">Experiencia Laboral</h3>
+                    <div class="animacion" data-aos="flip-down">
+                        <h5>Ticoy Foods - Aguascalientes</h5>
+                        <span class="experiencia">1 año y 3 meses</span>
+                        <div class="marching">
+                            <img src="./img/ticoy.jpg" alt="">
+                        </div>
+                        <div class="marching">
+                            <img src="./img/tickets.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>Gestion y seguimiento en tickets en Soporte Tecnico</li>
+                            <li>Instalacion y Configuracion de programas y sistemas operativos</li>
+                            <li>Instalacion de dispositivos de redes</li>
+                            <li>Monitoreo de Servidores</li>
+                            <li>Formateo de computadoras</li>
+                        </ul>
+                    </div>
+
+        
                 <!-- ////////////////-->
             </div>
         </div>
     </div>
     <div class="footer" data-aos="flip-left">
-        <h2>Contacto</h2>
+        <h2 id="contacto">Contacto</h2>
         <p>Dirección: <a href="https://www.google.com.mx/maps/place/Pradera+214,+Municipio+Libre,+20199+Aguascalientes,+Ags./@21.8962307,-102.2509316,19z/data=!4m15!1m8!3m7!1s0x8429f1e0bc5833f3:0xe0027abbcce36906!2sPradera+214,+Municipio+Libre,+20199+Aguascalientes,+Ags.!3b1!8m2!3d21.8962295!4d-102.2502879!16s%2Fg%2F11fsjw4hqk!3m5!1s0x8429f1e0bc5833f3:0xe0027abbcce36906!8m2!3d21.8962295!4d-102.2502879!16s%2Fg%2F11fsjw4hqk?entry=ttu">Pradera #214 Municipio Libre</a></p>
         <p>Estado: <a class="info"> Aguascalientes</a></p>
         <p>Telefono: <a class="info">+52 4495524425</a></p>
         <p>Correo: <a class="info" id="correo">danybuendia98@gmail.com</a></p>
     </div>
 
-    <!--<script src="app.js"></script>-->
     <script src="perfil.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./aos-master/dist/aos.js"></script>
@@ -150,5 +222,6 @@
             duration:2000
         });//este metodo arranca las animaciones de la libreria
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
