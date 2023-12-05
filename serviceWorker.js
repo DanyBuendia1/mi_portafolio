@@ -8,7 +8,7 @@ const archivosCache =
    "./index.html",
    "./perfil.css",
    "./perfil.js",
-   "app.js",
+   "./app.js",
    // ### IMGAGENES Y PDF ###
    "./img/CV.pdf",
    "./img/css.png",
@@ -33,7 +33,10 @@ const archivosCache =
    "./img/utna.jpg",
    // ### Libreria AOS ###
    "./aos-master/dist/aos.css",
-   "./aos-master/dist/aos.js"
+   "./aos-master/dist/aos.js",
+   // ### Iconos ###
+    "./iconos/logo72.png",
+    "./iconos/logo512.png"
 ]
 self.addEventListener("install", e =>{
     // Pre-cache our key assets

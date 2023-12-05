@@ -2,10 +2,10 @@
     "name": "Dany Buendia",
     "short_name": "Mi PWA",
     "descripcion": "Esto es mi protafolio en PWA",
-    "start_url":"perfil.html",
+    "start_url":"./index.html",
     "display":"standalone",
-    "scope":"/",
-    "orientacion":"portatil",
+    "scope":"./",
+    "orientacion":"portrait",
     "background_color":"#000000",
     "theme_color":"#000000",
     "icons":[
